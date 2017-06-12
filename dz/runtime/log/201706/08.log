@@ -1,0 +1,2230 @@
+[ 2017-06-08T15:21:03+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.150000s][吞吐率：0.47req/s] [内存消耗：2,689.52kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:21:49+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.098000s][吞吐率：0.48req/s] [内存消耗：2,694.62kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` <> 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.037000s ]
+[ error ] [8]未定义变量: str[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:371]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:22:51+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.345000s][吞吐率：0.43req/s] [内存消耗：2,660.97kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.045000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.084000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.096000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` <> 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.066000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:23:16+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.583000s][吞吐率：0.39req/s] [内存消耗：2,653.34kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.035000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.067000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` <> 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:24:44+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.394000s][吞吐率：0.42req/s] [内存消耗：2,653.74kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.066000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:26:49+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.132000s][吞吐率：0.47req/s] [内存消耗：2,653.77kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.040000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:31:26+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：0.032000s][吞吐率：31.25req/s] [内存消耗：1,397.13kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:378]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:31:44+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：7.028000s][吞吐率：0.14req/s] [内存消耗：2,654.11kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.165000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.091000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.218000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.388000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.154000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:3.205000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.089000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.121000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.138000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.102000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.095000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.112000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:32:59+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.824000s][吞吐率：0.35req/s] [内存消耗：2,654.44kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.136000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.124000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.102000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.085000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.186000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:33:43+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：3.785000s][吞吐率：0.26req/s] [内存消耗：2,654.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.103000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.162000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.128000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.112000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.184000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.085000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.138000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.182000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.128000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.074000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.095000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.094000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.113000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.037000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:37:58+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：1.629000s][吞吐率：0.61req/s] [内存消耗：2,450.24kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.097000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.121000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.117000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.037000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:39:25+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.483000s][吞吐率：0.40req/s] [内存消耗：2,564.96kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.079000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.071000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.054000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.070000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.077000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.044000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:40:59+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.057000s][吞吐率：0.49req/s] [内存消耗：2,564.66kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:41:39+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.391000s][吞吐率：0.42req/s] [内存消耗：2,564.69kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.041000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:42:45+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.371000s][吞吐率：0.42req/s] [内存消耗：2,564.96kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.088000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.063000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.044000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:44:23+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.038000s][吞吐率：0.49req/s] [内存消耗：2,564.96kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.045000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.161000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:44:40+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.677000s][吞吐率：0.37req/s] [内存消耗：2,564.96kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.385000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.062000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.090000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.181000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.077000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.045000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:46:26+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.761000s][吞吐率：0.36req/s] [内存消耗：2,564.74kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.058000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.085000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.101000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.045000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.075000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.089000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.076000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.084000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.078000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.052000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:46:37+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.198000s][吞吐率：0.45req/s] [内存消耗：2,675.56kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.077000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.071000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.053000s ]
+[ error ] [8]未定义变量: newmsg[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:315]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:46:59+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：3.436000s][吞吐率：0.29req/s] [内存消耗：2,564.67kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.142000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.111000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.054000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.121000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.126000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.487000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.065000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.105000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.079000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:47:20+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.071000s][吞吐率：0.48req/s] [内存消耗：2,564.74kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.038000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:48:19+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.429000s][吞吐率：0.41req/s] [内存消耗：2,675.23kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.067000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.061000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.074000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.083000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.051000s ]
+[ error ] [2]str_replace() expects at least 3 parameters, 1 given[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:322]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:49:35+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：2.279000s][吞吐率：0.44req/s] [内存消耗：2,654.41kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.148000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.078000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.045000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:52:44+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：5.663000s][吞吐率：0.18req/s] [内存消耗：2,662.04kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.084000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.059000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.038000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.069000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.058000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.103000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.097000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.073000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:3.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T15:55:02+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/xiangqing
+[ log ] localhost/dz/dz.php/index/show/xiangqing [运行时间：5.456000s][吞吐率：0.18req/s] [内存消耗：2,662.01kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->xiangqing[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`click`,`a`.`ratetimes`,`a`.`authorid`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`pid` = 7  AND `first` = 1 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `tid` FROM `jsx_forum_post` WHERE  `pid` = 7 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_thread` [ RunTime:0.149000s ]
+[ sql ] [ SQL ] UPDATE `jsx_forum_thread`  SET `views`=views+1  WHERE  `tid` = 7 [ RunTime:0.076000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_click` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `b`.`headimg` FROM `jsx_click` `a` INNER JOIN `jsx_common_member` `b` ON `b`.`uid`=`a`.`userid` WHERE  `a`.`articid` = 7  AND `a`.`userid` <> 8 LIMIT 110 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `jsx_click` WHERE  `articid` = 7  AND `userid` = 8 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_favorite` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT * FROM `jsx_home_favorite` WHERE  `uid` = 8  AND `id` = 7 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_home_follow` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jsx_home_follow` WHERE  `uid` = 8  AND `followuid` = 4 LIMIT 1 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:3.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `dateline`,`author`,`authorid`,`message` FROM `jsx_forum_post` WHERE  `tid` = 7  AND `first` = 0 ORDER BY dateline desc LIMIT 0,5 [ RunTime:0.045000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:33:25+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?fid=0
+[ log ] localhost/dz/dz.php/index/show/Datate?fid=0 [运行时间：0.287000s][吞吐率：3.48req/s] [内存消耗：2,344.73kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'fid' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.102000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:33:46+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?fid=0
+[ log ] localhost/dz/dz.php/index/show/Datate?fid=0 [运行时间：0.320000s][吞吐率：3.13req/s] [内存消耗：2,344.96kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'fid' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.112000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.070000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:34:01+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?fid=0
+[ log ] localhost/dz/dz.php/index/show/Datate?fid=0 [运行时间：0.608000s][吞吐率：1.64req/s] [内存消耗：2,264.30kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'fid' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.402000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.062000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:39:36+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?fid=0
+[ log ] localhost/dz/dz.php/index/show/Datate?fid=0 [运行时间：0.540000s][吞吐率：1.85req/s] [内存消耗：2,378.43kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'fid' => '0',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.159000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.143000s ]
+[ error ] [8]未定义变量: newArr[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:703]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:50:14+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?cid=41
+[ log ] localhost/dz/dz.php/index/show/Datate?cid=41 [运行时间：3.203000s][吞吐率：0.31req/s] [内存消耗：2,372.35kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '41',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.064000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.044000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.057000s ]
+[ error ] [8]未定义变量: newArr[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:703]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:50:40+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?cid=41
+[ log ] localhost/dz/dz.php/index/show/Datate?cid=41 [运行时间：0.275000s][吞吐率：3.64req/s] [内存消耗：2,257.45kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '41',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.095000s ]
+
+---------------------------------------------------------------
+[ 2017-06-08T16:50:55+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate?cid=41
+[ log ] localhost/dz/dz.php/index/show/Datate?cid=41 [运行时间：0.235000s][吞吐率：4.26req/s] [内存消耗：2,338.47kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '41',
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`dateline`,`a`.`author`,`t`.`headimg` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `t` ON `t`.`uid`=`a`.`authorid` ORDER BY a.dateline desc LIMIT 4 [ RunTime:0.059000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,1864 @@
+[ 2017-06-05T15:49:32+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.434000s][吞吐率：0.70req/s] [内存消耗：2,088.94kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.074000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.066000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.083000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.148000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.views，a.subject' in 'field list'[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:50:07+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.390000s][吞吐率：2.56req/s] [内存消耗：1,990.59kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.055000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:50:21+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.151000s][吞吐率：0.87req/s] [内存消耗：2,089.06kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.053000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.091000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.078000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.views，a.subject' in 'field list'[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:50:41+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.068000s][吞吐率：0.94req/s] [内存消耗：2,052.15kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.081000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.058000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:50:59+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.902000s][吞吐率：1.11req/s] [内存消耗：2,052.07kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.083000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.064000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.055000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.060000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:51:46+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.863000s][吞吐率：1.16req/s] [内存消耗：2,070.45kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.047000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40  AND `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:51:53+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.889000s][吞吐率：1.12req/s] [内存消耗：2,070.51kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.057000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 40  AND `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.045000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:57:18+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.370000s][吞吐率：0.73req/s] [内存消耗：2,070.58kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.107000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.103000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.077000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.143000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.075000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:57:35+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.884000s][吞吐率：0.53req/s] [内存消耗：2,070.64kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.170000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.116000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.095000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.171000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.119000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.107000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.218000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.158000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.085000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.072000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.082000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.105000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:57:50+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.513000s][吞吐率：1.95req/s] [内存消耗：2,018.61kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.075000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.049000s ]
+[ error ] [8]未定义数组索引: pid[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:723]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:59:33+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.535000s][吞吐率：1.87req/s] [内存消耗：2,018.92kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.074000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.071000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.055000s ]
+[ error ] [8]未定义数组索引: pid[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:728]
+
+---------------------------------------------------------------
+[ 2017-06-05T15:59:43+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.498000s][吞吐率：2.01req/s] [内存消耗：2,018.92kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.067000s ]
+[ error ] [8]未定义数组索引: pid[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:728]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:00:06+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.528000s][吞吐率：1.89req/s] [内存消耗：2,018.84kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.086000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.068000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.054000s ]
+[ error ] [8]未定义数组索引: pid[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:726]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:00:23+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.405000s][吞吐率：2.47req/s] [内存消耗：1,989.27kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:00:39+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.410000s][吞吐率：2.44req/s] [内存消耗：1,989.10kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.055000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.057000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.058000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:01:02+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.530000s][吞吐率：1.89req/s] [内存消耗：1,989.27kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.075000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.084000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:01:32+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.617000s][吞吐率：1.62req/s] [内存消耗：2,018.91kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.223000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.081000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.068000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.050000s ]
+[ error ] [8]未定义数组索引: pid[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:728]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:01:42+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.499000s][吞吐率：2.00req/s] [内存消耗：1,989.33kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.077000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` = 50 ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.064000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.063000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` IS NULL LIMIT 3 [ RunTime:0.084000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:12:49+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.262000s][吞吐率：3.82req/s] [内存消耗：1,997.04kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.074000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'fid' LIMIT 1' at line 1[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:13:14+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.174000s][吞吐率：5.75req/s] [内存消耗：1,997.10kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.055000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'fid' LIMIT 1' at line 1[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:13:34+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.156000s][吞吐率：6.41req/s] [内存消耗：1,971.19kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.035000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:15:04+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.189000s][吞吐率：5.29req/s] [内存消耗：1,968.63kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:15:22+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.301000s][吞吐率：3.32req/s] [内存消耗：1,971.19kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.094000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.081000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:15:29+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.281000s][吞吐率：3.56req/s] [内存消耗：1,986.28kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.041000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.039000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:17:11+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.305000s][吞吐率：3.28req/s] [内存消耗：1,986.63kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.046000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:20:12+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.305000s][吞吐率：3.28req/s] [内存消耗：2,018.48kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.046000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.060000s ]
+[ error ] [2]explode() expects parameter 2 to be string, array given[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:705]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:20:20+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.362000s][吞吐率：2.76req/s] [内存消耗：1,986.94kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.047000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.063000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.045000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:22:06+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,210.20kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected ','[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:706]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:22:52+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.428000s][吞吐率：2.34req/s] [内存消耗：1,987.19kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.079000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.039000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:22:57+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.679000s][吞吐率：1.47req/s] [内存消耗：2,039.95kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.101000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.084000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.063000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.078000s ]
+[ error ] [2]Illegal string offset 'tid'[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:721]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:23:26+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.419000s][吞吐率：2.39req/s] [内存消耗：2,039.96kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.052000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.051000s ]
+[ error ] [2]Illegal string offset 'tid'[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:725]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:23:49+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.440000s][吞吐率：2.27req/s] [内存消耗：2,006.30kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.051000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.054000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.049000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:24:11+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：1,210.19kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected ','[E:\phpstudy\WWW\dz\dz\index\controller\Show.php:706]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:25:47+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.754000s][吞吐率：1.33req/s] [内存消耗：2,044.47kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.090000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.169000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.089000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.055000s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'fid' in where clause is ambiguous[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:26:05+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.403000s][吞吐率：2.48req/s] [内存消耗：2,006.23kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.052000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.048000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:27:01+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.410000s][吞吐率：2.44req/s] [内存消耗：2,006.26kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.050000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.048000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.039000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.050000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:27:24+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.538000s][吞吐率：1.86req/s] [内存消耗：2,023.29kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.049000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.060000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` IN ('29','30','31','32') ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.063000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:27:49+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.706000s][吞吐率：1.42req/s] [内存消耗：2,022.97kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.155000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.070000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.085000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.068000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` IN (29,30,31,32) ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.047000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:27:56+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.609000s][吞吐率：1.64req/s] [内存消耗：2,022.97kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.069000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.075000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.056000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` IN (29,30,31,32) ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.042000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:28:05+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：0.775000s][吞吐率：1.29req/s] [内存消耗：2,022.97kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_forum` [ RunTime:0.088000s ]
+[ sql ] [ SQL ] SELECT `fup` FROM `jsx_forum_forum` WHERE  `fid` = 8 LIMIT 1 [ RunTime:0.076000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `fid` FROM `jsx_forum_forum` WHERE  `fup` = 8 [ RunTime:0.053000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.102000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `a`.`fid` IN (29,30,31,32) ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.091000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:28:18+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.815000s][吞吐率：0.55req/s] [内存消耗：2,065.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.082000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.060000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.072000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.062000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.068000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.051000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.399000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.087000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.176000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.101000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:28:30+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.219000s][吞吐率：0.82req/s] [内存消耗：2,072.70kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.073000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.069000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.062000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.056000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.079000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.077000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.080000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.079000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.037000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T16:28:39+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/Datate
+[ log ] localhost/dz/dz.php/index/show/Datate [运行时间：1.670000s][吞吐率：0.60req/s] [内存消耗：2,072.70kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'Datate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->Datate[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.080000s ]
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` ORDER BY a.dateline desc LIMIT 1 [ RunTime:0.067000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.083000s ]
+[ sql ] [ SQL ] SELECT `tableid`,`aid` FROM `jsx_forum_attachment` WHERE  `tid` = 8 LIMIT 3 [ RunTime:0.093000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.139000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.096000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.092000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.177000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.099000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.106000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.154000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`tid`,`a`.`pid`,`a`.`click`,`a`.`ratetimes`,`t`.`views`,`a`.`subject` FROM `jsx_forum_post` `a` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `pid` <> 8 ORDER BY a.dateline desc LIMIT 3 [ RunTime:0.106000s ]
+
+---------------------------------------------------------------
+[ 2017-06-05T17:29:48+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/show
+[ log ] localhost/dz/dz.php/index/show/show [运行时间：0.167000s][吞吐率：5.99req/s] [内存消耗：1,991.90kb] [文件加载：56]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Show->show[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.048000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1[E:\phpstudy\WWW\dz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-06-05T17:29:58+08:00 ] ::1 ::1 GET /dz/dz.php/index/show/show?page=1
+[ log ] localhost/dz/dz.php/index/show/show?page=1 [运行时间：2.790000s][吞吐率：0.36req/s] [内存消耗：2,389.70kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpstudy\WWW\dz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4989484032; ka9Z_2132_saltkey=GK188f00; ka9Z_2132_lastvisit=1495096325; QWQq_2132_saltkey=r1nc50iL; QWQq_2132_lastvisit=1495605617; QWQq_2132_ulastactivity=fc6cdhT0BVSDurObu5wdSxt4n%2FdstQBDQgdAy7lqsLQ6j2cPUZzQ; QWQq_2132_lastcheckfeed=1%7C1495609256; QWQq_2132_nofavfid=1; QWQq_2132_visitedfid=2; QWQq_2132_editormode_e=1; QWQq_2132_smile=1D1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Show->show[ E:\phpstudy\WWW\dz\dz\index\controller\Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_post` [ RunTime:0.048000s ]
+[ sql ] [ SQL ] SELECT `a`.`pid`,`a`.`message`,`a`.`subject`,`a`.`dateline`,`w`.`uid`,`w`.`username`,`w`.`headimg`,`f`.`fid`,`f`.`name`,`a`.`ratetimes`,`a`.`click`,`t`.`views` FROM `jsx_forum_post` `a` INNER JOIN `jsx_common_member` `w` ON `a`.`authorid`=`w`.`uid` INNER JOIN `jsx_forum_forum` `f` ON `f`.`fid`=`a`.`fid` INNER JOIN `jsx_forum_thread` `t` ON `t`.`tid`=`a`.`tid` WHERE  `first` = 1 LIMIT 0,5 [ RunTime:0.050000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment` [ RunTime:0.053000s ]
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 5 ORDER BY `pid` [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 4 ORDER BY `pid` [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 6 ORDER BY `pid` [ RunTime:0.036000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 7 ORDER BY `pid` [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `aid`,`tableid` FROM `jsx_forum_attachment` WHERE  `pid` = 8 ORDER BY `pid` [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_5` [ RunTime:0.046000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_5` WHERE  `aid` = 3 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_5` WHERE  `aid` = 4 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_4` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_4` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_4` WHERE  `aid` = 2 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_6` [ RunTime:0.061000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_6` WHERE  `aid` = 5 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_6` WHERE  `aid` = 6 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_6` WHERE  `aid` = 7 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_7` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 8 LIMIT 1 [ RunTime:0.035000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 9 LIMIT 1 [ RunTime:0.042000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 10 LIMIT 1 [ RunTime:0.037000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 11 LIMIT 1 [ RunTime:0.045000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 13 LIMIT 1 [ RunTime:0.043000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_7` WHERE  `aid` = 14 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jsx_forum_attachment_8` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 16 LIMIT 1 [ RunTime:0.040000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 17 LIMIT 1 [ RunTime:0.044000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065000s ] mysql:dbname=xiaocs;host=120.27.26.5;charset=utf8
+[ sql ] [ SQL ] SELECT `attachment` FROM `jsx_forum_attachment_8` WHERE  `aid` = 18 LIMIT 1 [ RunTime:0.043000s ]
+
+---------------------------------------------------------------
